@@ -9,11 +9,16 @@ public class Rational{
     private int Num;
     private int Den;
 
-    public Rational{
+    public Rational(){
 	Num = 0;
 	Den = 1;
     }
 
+    public Rational(int num, int denom){
+	Num = num;
+	Den = denom;
+    }
+    
     public int getNum(){
 	return Num;
     }
