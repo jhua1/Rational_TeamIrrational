@@ -1,6 +1,6 @@
 public class Driver{
     public static void main(String[] args){
-	
+	/*
 	Rational r = new Rational(2,3);
 	//Testing that everything in r is fine and multiplication
 
@@ -52,7 +52,21 @@ public class Driver{
 	System.out.println("======Checking s======");
 	System.out.println("Numerator: " + b.getNum());
 	System.out.println("Denominator: " + b.getDen());
+	*/
+	Rational r = new Rational(2,3);
+	Rational s = new Rational(1,2);
+	Rational t = new Rational(4,18);
+	r.add(s);
+	System.out.println(r.toString());
+	System.out.println(s.toString());
+	t.reduce();
+	System.out.println(t.toString());
 
+	Rational a = new Rational(2,3);
+	Rational b = new Rational(1,2);
+	a.subtract(b);
+	System.out.println(a.toString());
+	System.out.println(b.toString());
 	
     }
 }
