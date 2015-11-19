@@ -94,5 +94,20 @@ public class Rational{
 	Den /= commondiv;
     }
     
+    public static int gcd(int Num, int Den){
+    	return gcdER(Num, Den);
+    }
+    
+    public int compareTo(Rational x){
+    	if (this==x){
+    		return 0;
+    	}
+    	if (this>x){
+    		return 1;
+    	}
+    	if (this<x){
+    		return -1;
+    	}
+    }
 }
 	
