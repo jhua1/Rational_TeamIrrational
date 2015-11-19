@@ -36,7 +36,7 @@ public class Rational{
 	return Num + "/" + Den;
     }
 
-    //Decimal representation of the rational number
+    //Floating point value representation of the rational number
 
     public double floatValue(){
 	return (double)Num/Den;
@@ -93,9 +93,6 @@ public class Rational{
 	Num /= commondiv;
 	Den /= commondiv;
     }
-    
-
-
     
 }
 	
