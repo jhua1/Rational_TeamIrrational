@@ -99,15 +99,50 @@ public class Rational{
     }
     
     public int compareTo(Rational x){
-    	if (this==x){
-    		return 0;
+    	if (this.floatValue()>x.floatValue()){
+	    return 1;
     	}
-    	if (this>x){
-    		return 1;
+    	else if (this.floatValue()<x.floatValue()){
+	    return -1;
     	}
-    	if (this<x){
-    		return -1;
+	else{
+	    return 0;
     	}
+    }
+
+    public static void main(String[] args){
+	Rational cowboy = new Rational();
+	Rational ranger = new Rational(3,5);
+	Rational matador = new Rational(6,7);
+	System.out.println(cowboy.toString());
+	System.out.println(cowboy.floatValue());
+	System.out.println(ranger.toString());
+	System.out.println(ranger.floatValue());
+	System.out.println(matador.toString());
+	System.out.println(matador.floatValue());
+	cowboy.multiply(matador);
+	System.out.println(cowboy.toString());
+	System.out.println(cowboy.floatValue());
+	cowboy.divide(matador);
+	System.out.println(cowboy.toString());
+	System.out.println(cowboy.floatValue());
+	cowboy.add(matador);
+	System.out.println(cowboy.toString());
+	System.out.println(cowboy.floatValue());
+	cowboy.subtract(matador);
+	System.out.println(cowboy.toString());
+	System.out.println(cowboy.floatValue());
+	System.out.println(ranger.gcd());
+	matador.reduce();
+	System.out.println(matador.toString());
+	System.out.println(matador.floatValue());
+        Rational thenum = new Rational (20, 30);
+	System.out.println(thenum.toString());
+	System.out.println(thenum.floatValue());
+	System.out.println(gcd(10,15));
+	System.out.println(gcd(1,15));
+	System.out.println(ranger.compareTo(matador));
     }
 }
 	
+
