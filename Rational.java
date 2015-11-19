@@ -57,7 +57,7 @@ public class Rational{
     //PHASE TWO
 
     //Euclid's Algorithm
-    public int gcdER(int a, int b) {
+    public static int gcdER(int a, int b) {
 	if (b > a) {return gcdER(b, a);} // Make the integers (larger,smaller)
 	if (a % b == 0) { // If larger/smaller is 0
 	    return b;     // Return smaller
@@ -84,7 +84,7 @@ public class Rational{
 	this.Den = this.Den*multleft; //Making the denominator the LCD
     }
     
-    public static int gcd(){
+    public int gcd(){
 	return gcdER(Num, Den);
     }
 
