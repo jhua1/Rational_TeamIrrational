@@ -84,7 +84,7 @@ public class Rational{
 	this.Den = this.Den*multleft; //Making the denominator the LCD
     }
     
-    public int gcd(){
+    public static int gcd(){
 	return gcdER(Num, Den);
     }
 
